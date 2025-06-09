@@ -28,4 +28,10 @@ function aumentaTamanho(){
 const campoSenha = document.querySelector('#campo-senha');
 
 const letrasMaiudculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+function geraSenha(){
+    let numeroAleatorio = Math.random()*letrasMaiudculas.length;
+    console.log(numeroAleatorio);
+}
+
 campoSenha.value = letrasMaiudculas;
