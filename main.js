@@ -1,3 +1,3 @@
-document.querySelector('.parametro-senha_botao');
-const numeroSenha = document.querySelector('.parametro-senha_texto');
+document.querySelector('.parametro-senha__botao');
+const numeroSenha = document.querySelector('.parametro-senha__texto');
 numeroSenha.textContent = 5; 
