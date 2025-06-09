@@ -9,7 +9,7 @@ const botoes = document.querySelectorAll('.parametro-senha__botao');
 botoes[0].onclick = diminuirTamanho;
 botoes[1].onclick = aumentaTamanho;
 
-console.log(botoes);
+//console.log(botoes);
 
 function diminuirTamanho(){
     if (tamanhoSenha > 1){
