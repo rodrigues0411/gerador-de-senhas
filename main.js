@@ -25,7 +25,7 @@ function aumentaTamanho(){
     numeroSenha.textContent = tamanhoSenha
 }
 
-const campoSenha + document.querySelector('#campo-senha');
+const campoSenha = document.querySelector('#campo-senha');
 
 const letrasMaiudculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 campoSenha.value = letrasMaiudculas;
