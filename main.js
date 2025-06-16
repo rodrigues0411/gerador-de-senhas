@@ -30,19 +30,32 @@ function aumentaTamanho(){
 const campoSenha = document.querySelector('#campo-senha');
 
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
+const numeros = ('0123456789');
+const simbolo = ('!@#%*.?');
+
 geraSenha();
 
 function geraSenha(){
 let senha = '';
+let alfabeto = '';
+if (checkbox[0].checked){
+    alfabeto = alfabeto + letrasMaiusculas;
+}
 for (let i = 0; i < tamanhoSenha; i++){ 
     let numeroAleatorio = Math.random()*letrasMaiusculas.length;
     numeroAleatorio = Math.floor(numeroAleatorio);
     senha = senha + letrasMaiusculas[numeroAleatorio];
     console.log(letrasMaiusculas[numeroAleatorio]);
 }
+console.log(alfabeto);
 campoSenha.value = senha;
 }
 
 const checkbox = document.querySelectorAll('.checkbox');
+
+for (i=0; < i checkbox.length;i++){
+    checkbox[i].onclick = geraSenha;
+}
 
 console.log(checkbox);
