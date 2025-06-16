@@ -37,12 +37,23 @@ const simbolo = ('!@#%*.?');
 geraSenha();
 
 function geraSenha(){
-let senha = '';
 let alfabeto = '';
 if (checkbox[0].checked){
     alfabeto = alfabeto + letrasMaiusculas;
 }
-for (let i = 0; i < tamanhoSenha; i++){ 
+if (checkbox[1].checked){
+    alffabeto = alfabeto + letrasMinusculas;
+}
+if (checkbox[2].checked){
+    alfabeto = alfabeto + numeros;
+}
+if (checkbox[3].checked){
+    alfabeto = alfabeto + simbolo;
+}
+console.log(alfabeto);
+
+
+for (let i = 0; i <  tamanhoSenha; i++){ 
     let numeroAleatorio = Math.random()*letrasMaiusculas.length;
     numeroAleatorio = Math.floor(numeroAleatorio);
     senha = senha + letrasMaiusculas[numeroAleatorio];
