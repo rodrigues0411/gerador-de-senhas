@@ -42,3 +42,7 @@ for (let i = 0; i < tamanhoSenha; i++){
 }
 campoSenha.value = senha;
 }
+
+const checkbox = document.querySelectorAll('.checkbox');
+
+console.log(checkbox);
