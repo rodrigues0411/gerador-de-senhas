@@ -62,9 +62,4 @@ for (let i = 0; i <  tamanhoSenha; i++){
 campoSenha.value = senha;
 }
 
-const checkbox = document.querySelectorAll('.checkbox');
-
-for (i=0; < i checkbox.length;i++){
-    checkbox[i].onclick = geraSenha;
-}
 
