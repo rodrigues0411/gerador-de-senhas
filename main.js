@@ -59,7 +59,6 @@ for (let i = 0; i <  tamanhoSenha; i++){
     senha = senha + letrasMaiusculas[numeroAleatorio];
     console.log(letrasMaiusculas[numeroAleatorio]);
 }
-console.log(alfabeto);
 campoSenha.value = senha;
 }
 
