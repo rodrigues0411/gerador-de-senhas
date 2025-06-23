@@ -63,3 +63,4 @@ function geraSenha() {
     campoSenha.value = senha;
 }
 
+const forcaSenha = document.querySelectorAll('.forca');
